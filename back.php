@@ -1,4 +1,4 @@
-<?php include_once "base.php"?>
+<?php include_once "base.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astour Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -21,11 +20,21 @@
                 <div class="topic">Astour</div>
             </div>
             <div class="top2">
-                <a class="topbotton" href="#Home"><h5>Home</h5></a>
-                <a class="topbotton" href="#Introducejump"><h5>Introduce</h5></a>
-                <a class="topbotton" href="#portfoliotextjump"><h5>Portfolio</h5></a>
-                <a class="topbotton" href="#Contactjump"><h5>Contact</h5></a>
-                <a class="topbotton" href="./login.html"><h5>Login</h5></a>
+                <a class="topbotton" href="#Home">
+                    <h5>Home</h5>
+                </a>
+                <a class="topbotton" href="#Introducejump">
+                    <h5>Introduce</h5>
+                </a>
+                <a class="topbotton" href="#portfoliotextjump">
+                    <h5>Portfolio</h5>
+                </a>
+                <a class="topbotton" href="#Contactjump">
+                    <h5>Contact</h5>
+                </a>
+                <a class="topbotton" href="./login.html">
+                    <h5>Login</h5>
+                </a>
             </div>
         </div>
 
@@ -44,13 +53,11 @@
                             <img src="./img/沙灘.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
-                        data-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls"
-                        data-slide="next">
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </button>
@@ -62,30 +69,42 @@
         <div class="top">
             <div class="notes">
                 <div class="notesp">
-                    <p>
-                        Lorem ipsum dolor sit amet, <br>
-                        adipisicing elit. Eius, <br>
-                        omnis explicaboreprehend <br>
-                        necessitatibus minima qu<br>
-                        o vel ipsa, ea tempora alias <br>
-                        itaque officiis dolor<br>
-                        a, perspiciatis labore iste? Sunt.<br>
-                        Lorem ipsum dolor sit amet, <br>
+                    <form action="./api/save_introduce.php" method="POST">
+                        <tr>
 
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, <br>
-                        adipisicing elit. Eius, <br>
-                        omnis explicaboreprehendert <br>
-                        necessitatibus minima qu<br>
-                        o vel ipsa, ea tempora alias <br>
-                        itaque officiis dolor<br>
-                        a, perspiciatis labore iste? Sunt.<br>
-                        Lorem ipsum dolor sit amet, <br>
+                            <td>專長</td>
+                            <br>
+                            <td>
+                                <input type="text" name="resume">
+                            </td>
+                        </tr>
 
-                    </p>
+
+                    </form>
+                    <form action="./api/save_introduce.php" method="POST">
+                        <tr>
+
+                            <td>自我介紹</td>
+                            <br>
+                            <td>
+                                <input type="text" name="text">
+                            </td>
+                        </tr>
+                    </form>
                 </div>
-                <div class="introduction"></div>
+                <div class="introduction">
+                <form action="./api/save_introduce.php" method="POST">
+                        <tr>
+
+                            <td>履歷照片</td>
+                            <br>
+                            <td>
+                                <input type="text" name="img">
+                            </td>
+                        </tr>
+                    </form>
+
+                </div>
             </div>
         </div>
         <div class="top">
@@ -160,15 +179,9 @@
         </div>
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 
 </html>

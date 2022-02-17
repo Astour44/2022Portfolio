@@ -95,13 +95,12 @@
                     </form>
                 </div>
                 <div class="introduction">
-                <form action="./api/save_img.php" method="POST">
+                <form action="./api/save_img.php" method="POST" enctype="multipart/form-data">
                         <tr>
-
                             <td>履歷照片</td>
                             <br>
                             <td>
-                                <input type="text" name="img">
+                                <input type="file" name="img" id="img">
                                 <input type="submit" value="修改確定">
                             </td>
                         </tr>

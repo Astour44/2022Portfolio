@@ -3,13 +3,14 @@ session_start();
 date_default_timezone_set('Asia/Taipei');
 
 class DB{
-    private $dsn="mysql:host=localhost;charset=utf8;dbname=portfolio";
-    private $pdo;
-    public $table;
+    protected $dsn="mysql:host=localhost;charset=utf8;dbname=portfolio";
+    protected $root="root";
+    protected $pdo;
+    protected $table;
 
     function __construct($table){
         $this->table=$table;
-        $this->pdo=new PDO($this->dsn,'root','');
+        $this->pdo=new PDO($this->dsn,$this->root);
         
     }
 
@@ -40,6 +41,31 @@ class DB{
         return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     }
 
+
+
+    public function count(...$arg){
+        $sql="select count(*) from $this->table ";
+
+        if(isset($arg[0])){
+            if(is_array($arg[0])){
+                foreach($arg[0] as $key => $value){
+                    $tmp[]=sprintf("`%s`='%s'",$key,$value);
+                }
+                    $sql=$sql . " where " . implode(" && ",$tmp);
+            }else{
+ 
+                $sql=$sql . $arg[0];
+            }
+
+            if(isset($arg[1])){
+                 $sql=$sql . $arg[1];
+            }
+        }
+
+        //echo $sql;
+        return $this->pdo->query($sql)->fetchColumn();
+
+    }
     function find($id){
         $sql="SELECT * FROM $this->table ";
 

@@ -63,10 +63,7 @@ include_once "../base.php"
                 <button type="button" class="btn btn-outline-light" onclick="reset()"><i class="fas fa-paper-plane"><a href="./reg.php" style="color:white;"> R e s e t</a></i></button>
                 <button type="button" class="btn btn-outline-light"><i class="fas fa-paper-plane"><a href="./login.php" style="color:white;"> L o g i n</a></i></button>
             </div>
-            <?php
-    
-
-            ?>
+            
         </form>
     </div>
     </div>

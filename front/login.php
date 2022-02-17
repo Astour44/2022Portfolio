@@ -34,31 +34,27 @@ include_once "../base.php"
         <div class="form-header">
             <h1><i class="fas fa-book-open">login</i></h1>
         </div>
-        <form action="form-body">
+
+        <form action="../api/check_pw.php" method="POST">
             <div class="form-group">
-                <label for="email"><i class="far fa-envelope">Account&ensp;</i></label>
-                <input type="text" name="email" id="email">
+                <label for="acc"><i class="far fa-envelope">Account&ensp;</i></label>
+                <input type="text" name="acc" id="acc">
             </div>
             <div class="form-group">
-                <label for="username"><i class="fas fa-address-card">password</i></label>
-                <input type="password" name="username" id="username">
+                <label for="pw"><i class="fas fa-address-card">password</i></label>
+                <input type="password" name="pw" id="pw">
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-outline-light"><i class="fas fa-paper-plane"> S E N D</i></button>
-                <button type="button" class="btn btn-outline-light"><i class="fas fa-paper-plane"><a href="./reg.php" style="color:white;"> R e g i s t e r</a></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="fas fa-paper-plane"><a href="../index.php" style="color:white;"> H o m e</a></i></button>
+                <button type="button" class="btn btn-outline-light"><a href="./reg.php" style="color:white;"> <i class="fas fa-paper-plane"> R e g i s t e r</a></i></button>
+                <button type="button" class="btn btn-outline-light"><a href="../index.php" style="color:white;"> <i class="fas fa-paper-plane"> H o m e</a></i></button>
             </div>
         </form>
     </div>
     </div>
-    <?php
 
-    if ($Mem->all($_GET)) {
-        echo $Mem->all($_GET);
-        $_SESSION['login'] = $_GET['acc'];
-    };
 
-    ?>
+
 
 </body>
 

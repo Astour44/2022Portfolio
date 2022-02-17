@@ -1,5 +1,5 @@
 <?php
-include_once "base.php"
+include_once "./base.php"
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -72,26 +72,12 @@ include_once "base.php"
         <div class="top">
             <div class="notes">
                 <div class="notesp">
-                    <p>
-                        Lorem ipsum dolor sit amet, <br>
-                        adipisicing elit. Eius, <br>
-                        omnis explicaboreprehend <br>
-                        necessitatibus minima qu<br>
-                        o vel ipsa, ea tempora alias <br>
-                        itaque officiis dolor<br>
-                        a, perspiciatis labore iste? Sunt.<br>
-                        Lorem ipsum dolor sit amet, <br>
-
+                    <p style="width:300px;height:230px;">
+                    <?=$Int->find(1)['resume'];?>
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, <br>
-                        adipisicing elit. Eius, <br>
-                        omnis explicaboreprehendert <br>
-                        necessitatibus minima qu<br>
-                        o vel ipsa, ea tempora alias <br>
-                        itaque officiis dolor<br>
-                        a, perspiciatis labore iste? Sunt.<br>
-                        Lorem ipsum dolor sit amet, <br>
+                    <p style="width:350px;height:230px;">
+
+                    <?=$Int->find(1)['text'];?>
 
                     </p>
                 </div>

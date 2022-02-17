@@ -159,4 +159,5 @@ $Admin=new DB('admin');//管理帳號資料表
 $Bot=new DB('bottom');//頁尾資料表
 $Pro=new DB('portfolio');//作品集資料表
 $Int=new DB('introduce');//自我介紹區資料表
+
 ?>

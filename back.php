@@ -89,13 +89,13 @@
                             <br>
                             <td>
                                 <textarea type="text" name="text" style="width:350px;height:230px;"></textarea>
-                                 <input type="submit" value="修改確定">
+                                <input type="submit" value="修改確定">
                             </td>
                         </tr>
                     </form>
                 </div>
                 <div class="introduction">
-                <form action="./api/save_img.php" method="POST" enctype="multipart/form-data">
+                    <form action="./api/save_img.php" method="POST" enctype="multipart/form-data">
                         <tr>
                             <td>履歷照片</td>
                             <br>
@@ -114,43 +114,29 @@
         </div>
         <div class="bordergray"></div>
         <div class="top3">
-            <div class="portfolio a"></div>
             <div class="portfolio">
-                <h1 class="d-flex justify-content-center">PHP</h1>
-                <p class="portfoliop">
-                    Lorem ipsum dolor sit amet, <br>
-                    adipisicing elit. Eius, <br>
-                    omnis explicaboreprehendert <br>
-                    necessitatibus minima qu<br>
-                    o vel ipsa, ea tempora alias <br>
-                    itaque officiis dolor<br>
-                    a, perspiciatis labore iste? Sunt.<br>
-                    Lorem ipsum dolor sit amet, <br>
-                    adipisicing elit. Eius, <br>
-                    omnis explicaboreprehent <br>
-                </p>
+                <form action="./api/save_resume.php" method="POST">
+                    <!-- 這裡放圖片新增 -->
+                    <h2>作品集圖片</h2>
+                    <input type="file" name="img">
+
+                    <input type="submit" value="修改確定">
+
+                </form>
+            </div>
+            <div class="portfolio">
+                <!-- 這裡放文字新增 -->
+                <form action="./api/save_pro_text.php" method="POST">
+                    <!-- 這裡放圖片新增 -->
+                    <h2>作品集文字</h2>
+                    <textarea type="text" name="text" style="width:430px;height:370px;"></textarea>
+
+                    <input type="submit" value="修改確定">
+
+                </form>
             </div>
         </div>
-        <div class="bordergray"></div>
-        <div class="top3">
-            <div class="portfolio">
-                <h1 class="d-flex justify-content-center">Design</h1>
-                <p class="portfoliop">
-                    Lorem ipsum dolor sit amet, <br>
-                    adipisicing elit. Eius, <br>
-                    omnis explicaboreprehendert <br>
-                    necessitatibus minima qu<br>
-                    o vel ipsa, ea tempora alias <br>
-                    itaque officiis dolor<br>
-                    a, perspiciatis labore iste? Sunt.<br>
-                    Lorem ipsum dolor sit amet, <br>
-                    adipisicing elit. Eius, <br>
-                    omnis explicaboreprehent <br>
-                </p>
-            </div>
-            <div class="portfolio a">portfolio1text</div>
-        </div>
-        
+
         <div class="bordergray"></div>
         <div class="top3">
             <div class="portfolio1"></div>

@@ -81,7 +81,9 @@ include_once "./base.php"
 
                     </p>
                 </div>
-                <div class="introduction"></div>
+                <div class="introduction">
+                <img src="./img/<?=$Int->find(1)['img'];?>" width="290" height="290">
+                </div>
             </div>
         </div>
         <div class="top">

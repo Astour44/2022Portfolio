@@ -159,14 +159,14 @@ font-size: 80px;}
     transition-timing-function: ease;
     transition: width 2s;
 }
-.b{background-image: url(../img/冰島電子報.gif);
+/* .b{background-image: url(../img/冰島電子報.gif);
     background-size:500px 500px;
-    transition-timing-function: ease-in;
+    transition-timing-function: ease;
     transition: width 2s;}
 .c{background-image: url(../img/公關活動.jpg);
     background-size:500px 700px;
-    transition-timing-function: ease-out;
-    transition: all 2s;}
+    transition-timing-function: ease;
+    transition: width 2s;} */
     .a:hover{
         width: 1500px;
         position:static;

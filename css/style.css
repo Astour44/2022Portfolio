@@ -154,19 +154,19 @@ font-size: 80px;}
     margin-bottom: 30px;
 }
 .a{
-    background-image: url(../img/未命名.png);
+    background-image: url(../img/005.png);
     background-size:500px 550px;
     transition-timing-function: ease;
     transition: width 2s;
 }
-/* .b{background-image: url(../img/冰島電子報.gif);
+ .b{background-image: url(../img/006.gif);
     background-size:500px 500px;
     transition-timing-function: ease;
     transition: width 2s;}
-.c{background-image: url(../img/公關活動.jpg);
+.c{background-image: url(../img/007.jpg);
     background-size:500px 700px;
     transition-timing-function: ease;
-    transition: width 2s;} */
+    transition: width 2s;}
     .a:hover{
         width: 1500px;
         position:static;

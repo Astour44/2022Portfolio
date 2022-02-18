@@ -4,6 +4,8 @@ include_once "../base.php";
 //問題start
 $dsn = "mysql:host=localhost;charset=utf8;dbname=portfolio";
 $pdo = new PDO($dsn, 'root', '');
+// $dsn = "mysql:host=localhost;charset=utf8;dbname=s1100425";
+// $pdo = new PDO($dsn, 's1100425', 's1100425');
 //問題end
 
 $acc = $_POST['acc'];

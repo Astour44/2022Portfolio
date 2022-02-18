@@ -32,7 +32,7 @@
                 <a class="topbotton" href="#Contactjump">
                     <h5>Contact</h5>
                 </a>
-                <a class="topbotton" href="./login.html">
+                <a class="topbotton" href="./index.php">
                     <h5>Login</h5>
                 </a>
             </div>
@@ -44,13 +44,13 @@
                 <div id="carouselExampleControls " class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner ">
                         <div class="carousel-item active">
-                            <img src="./img/沙灘.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/beach.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/沙灘.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/beach.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/沙灘.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/beach.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
@@ -139,9 +139,30 @@
 
         <div class="bordergray"></div>
         <div class="top3">
-            <div class="portfolio1"></div>
-            <div class="portfolio1"></div>
-            <div class="portfolio1"></div>
+            <div class="portfolio1"><form action="./api/save_pro_text.php" method="POST">
+                    <!-- 這裡放圖片新增 -->
+                    <h2>作品集文字</h2>
+                    <input type="file" name="text">
+
+                    <input type="submit" value="修改確定">
+
+                </form></div>
+            <div class="portfolio1"><form action="./api/save_pro_text.php" method="POST">
+                    <!-- 這裡放圖片新增 -->
+                    <h2>作品集文字</h2>
+                    <input type="file" name="text">
+
+                    <input type="submit" value="修改確定">
+
+                </form></div>
+            <div class="portfolio1"><form action="./api/save_pro_text.php" method="POST">
+                    <!-- 這裡放圖片新增 -->
+                    <h2>作品集文字</h2>
+                    <input type="file" name="text">
+
+                    <input type="submit" value="修改確定">
+
+                </form></div>
         </div>
         <h1 id="Contactjump"><a href="#Home">Contact</a></h1>
         <div class="top">

@@ -153,6 +153,9 @@ font-size: 80px;}
     opacity: 0.6;
     margin-bottom: 30px;
 }
+html{
+    scroll-behavior: smooth;
+}
 .a{
     background-image: url(../img/005.png);
     background-size:500px 550px;

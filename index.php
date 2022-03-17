@@ -19,146 +19,39 @@ include_once "./base.php"
 <body id="Home">
 
     <div class="background">
-        <div class="top">
-            <div class="top1">
-                <div class="logo"></div>
-                <div class="topic">Astour</div>
-            </div>
-            <div class="top2">
-                <a class="topbotton" href="#Home">
-                    <h5>Home</h5>
-                </a>
-                <a class="topbotton" href="#Introducejump">
-                    <h5>Introduce</h5>
-                </a>
-                <a class="topbotton" href="#portfoliotextjump">
-                    <h5>Portfolio</h5>
-                </a>
-                <a class="topbotton" href="#Contactjump">
-                    <h5>Contact</h5>
-                </a>
-                <a class="topbotton" href="./front/login.php">
-                    <h5>Login</h5>
-                </a>
-            </div>
-        </div>
-        <!-- 輪播start -->
-        <div class="d-flex justify-content-center">
-            <div class="carousel1">
-                <div id="carouselExampleControls " class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner ">
-                        <div class="carousel-item active">
-                            <img src="./img/beach.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/beach.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/beach.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </button>
-                    <!-- 輪播end -->
-                </div>
-            </div>
-        </div>
-        <h1 id="Introducejump"><a href="#Home">Introduce</a></h1>
-        <div class="top">
-            <div class="notes">
-                <div class="notesp">
-                    <p style="width:300px;height:230px;">
-                    <?=$Int->find(1)['resume'];?>
-                    </p>
-                    <p style="width:350px;height:230px;">
+        <!-- header start -->
+        <?php
+        include_once "./front/header.php";
+        ?>
+        <!-- header start -->
+        <!-- 輪播carousel start -->
+        <?php
+        include_once "./front/carousel.php";
+        ?>
+        <!-- 輪播carousel end -->
 
-                    <?=$Int->find(1)['text'];?>
+        <!--  自我介紹Introduce start -->
+        <?php
+        include_once "./front/Introduce.php";
+        ?>
+        <!--  自我介紹Introduce end -->
 
-                    </p>
-                </div>
-                <div class="introduction">
-                <img src="./img/<?=$Int->find(1)['img'];?>" width="290" height="290">
-                </div>
-            </div>
-        </div>
-        <div class="top">
-            <div class="portfoliotext" id="portfoliotextjump"><a href="#Home">My <br>Portfolio</a></div>
-        </div>
-        <div class="bordergray"></div>
-        <div class="top3">
-            <div class="portfolio a"></div>
-            <div class="portfolio">
-                <h1 class="d-flex justify-content-center">PHP</h1>
-                <p class="portfoliop">
-                    Lorem ipsum dolor sit amet, <br>
-                    adipisicing elit. Eius, <br>
-                    omnis explicaboreprehendert <br>
-                    necessitatibus minima qu<br>
-                    o vel ipsa, ea tempora alias <br>
-                    itaque officiis dolor<br>
-                    a, perspiciatis labore iste? Sunt.<br>
-                    Lorem ipsum dolor sit amet, <br>
-                    adipisicing elit. Eius, <br>
-                    omnis explicaboreprehent <br>
-                </p>
-            </div>
-        </div>
-        <div class="bordergray"></div>
-        <div class="top3">
-            <div class="portfolio">
-                <h1 class="d-flex justify-content-center">Design</h1>
-                <p class="portfoliop">
-                    Lorem ipsum dolor sit amet, <br>
-                    adipisicing elit. Eius, <br>
-                    omnis explicaboreprehendert <br>
-                    necessitatibus minima qu<br>
-                    o vel ipsa, ea tempora alias <br>
-                    itaque officiis dolor<br>
-                    a, perspiciatis labore iste? Sunt.<br>
-                    Lorem ipsum dolor sit amet, <br>
-                    adipisicing elit. Eius, <br>
-                    omnis explicaboreprehent <br>
-                </p>
-            </div>
-            <div class="portfolio b">portfolio1text</div>
-        </div>
-        <div class="bordergray"></div>
-        <div class="top3">
-            <div class="portfolio c"></div>
-            <div class="portfolio">
-                <h1 class="d-flex justify-content-center">Planning</h1>
-                <p class="portfoliop">
-                    Lorem ipsum dolor sit amet, <br>
-                    adipisicing elit. Eius, <br>
-                    omnis explicaboreprehendert <br>
-                    necessitatibus minima qu<br>
-                    o vel ipsa, ea tempora alias <br>
-                    itaque officiis dolor<br>
-                    a, perspiciatis labore iste? Sunt.<br>
-                    Lorem ipsum dolor sit amet, <br>
-                    adipisicing elit. Eius, <br>
-                    omnis explicaboreprehent <br>
-                </p>
-            </div>
-        </div>
-        <div class="bordergray"></div>
-        <div class="top3">
-            <div class="portfolio1"></div>
-            <div class="portfolio1"></div>
-            <div class="portfolio1"></div>
-            <div class="portfolio1"></div>
-        </div>
-        <div class="bordergray"></div>
-        <h1 id="Contactjump"><a href="#Home">Contact</a></h1>
-        <div class="top">
-            <footer class="footer"></footer>
-        </div>
+        <!--  作品集portfolio start -->
+        <?php
+        include_once "./front/portfolio.php";
+        ?>
+        <!--  作品集portfolio end -->
+
+        <!--  作品集littleportfolio start -->
+        <?php
+        include_once "./front/littleportfolio.php";
+        ?>
+        <!--  作品集littleportfolio end -->
+        <!--  作品集footer start -->
+        <?php
+        include_once "./front/footer.php";
+        ?>
+        <!--  作品集footer end -->
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

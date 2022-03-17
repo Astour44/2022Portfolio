@@ -3,6 +3,21 @@
 </div>
 <div class="bordergray"></div>
 <div class="top3">
+
+
+    <?php
+    $rows = $Mem->all();
+    foreach ($rows as $row => $value) {
+        if ($row % 2 == 0) {
+            echo "可以被整除";
+        } else {
+            echo "不能被整除";
+        }
+        echo "<br>";
+    }
+    ?>
+
+
     <div class="portfolio a"></div>
     <div class="portfolio">
         <h1 class="d-flex justify-content-center">PHP</h1>

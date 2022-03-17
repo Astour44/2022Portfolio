@@ -8,7 +8,9 @@
                     <td>專長</td>
                     <br>
                     <td>
-                        <textarea type="text" name="resume" style="width:300px;height:230px;"></textarea>
+                        <textarea type="text" name="resume" style="width:300px;height:230px;">
+                        <?= $Int->find(1)['resume']; ?>
+                    </textarea>
                         <input type="submit" value="修改確定">
                     </td>
                 </tr>
@@ -21,7 +23,9 @@
                     <td>自我介紹</td>
                     <br>
                     <td>
-                        <textarea type="text" name="text" style="width:350px;height:230px;"></textarea>
+                        <textarea type="text" name="text" style="width:350px;height:230px;">
+                        <?= $Int->find(1)['text']; ?>
+                    </textarea>
                         <input type="submit" value="修改確定">
                     </td>
                 </tr>
@@ -31,7 +35,9 @@
             <form action="./api/save_img.php" method="POST" enctype="multipart/form-data">
                 <tr>
                     <td>履歷照片</td>
-                    <br>
+                    <div>
+                        <img src="./img/<?= $Int->find(1)['img']; ?>" width="150" height="150">
+                    </div>
                     <td>
                         <input type="file" name="img" id="img">
                         <input type="submit" value="修改確定">

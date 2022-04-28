@@ -37,12 +37,6 @@
         include_once "./back/portfolio.php";
         ?>
         <!-- 作品集portfolio end -->
-        
-        <!-- 作品集littleportfolio start -->
-        <?php
-        include_once "./back/littleportfolio.php";
-        ?>
-        <!-- 作品集littleportfolio end -->
 
         <!-- 作品集footer start -->
         <?php

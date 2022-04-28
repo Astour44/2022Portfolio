@@ -8,11 +8,11 @@ foreach ($rows as $row => $value) {
 ?>
         <div class="bordergray"></div>
         <div class="top3">
-            <div class="portfolio a">
+            <div class="portfoliofront a">
                 <img src="./img/<?= $value['img']; ?>.jpg" alt="" width="100%" height="100%">
 
             </div>
-            <div class="portfolio">
+            <div class="portfoliofront">
                 <h1 class="d-flex justify-content-center"></h1>
                 <p class="portfoliop">
                     <?= $value['text']; ?>
@@ -25,13 +25,13 @@ foreach ($rows as $row => $value) {
     ?>
         <div class="bordergray"></div>
         <div class="top3">
-            <div class="portfolio">
+            <div class="portfoliofront">
                 <h1 class="d-flex justify-content-center"></h1>
                 <p class="portfoliop">
                     <?= $value['text']; ?>
                 </p>
             </div>
-            <div class="portfolio b">
+            <div class="portfoliofront b">
                 <img src="./img/<?= $value['img']; ?>.jpg" alt="" width="100%" height="100%">
             </div>
         </div>

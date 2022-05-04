@@ -192,21 +192,25 @@ html {
 
 .a {
     transition-timing-function: ease;
-    transition: width 2s;
+    transition: width  2s;
+    
 }
 
 .b {
     transition-timing-function: ease;
-    transition: width 2s;
+    transition: width  2s;
+    
 }
 
 .a:hover {
-    width: 900px;
+    width: 600px;
+    
     position: static;
 }
 
 .b:hover {
-    width: 900px;
+    width: 600px;
+    
     position: static;
 }
 

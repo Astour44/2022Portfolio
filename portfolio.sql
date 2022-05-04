@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2022-02-18 01:41:54
--- 伺服器版本： 10.4.22-MariaDB
--- PHP 版本： 7.4.26
+-- 產生時間： 2022-05-04 20:47:48
+-- 伺服器版本： 10.4.21-MariaDB
+-- PHP 版本： 7.4.24
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,7 +39,9 @@ CREATE TABLE `introduce` (
 --
 
 INSERT INTO `introduce` (`id`, `resume`, `text`, `img`) VALUES
-(1, 'aaaaaaaaaa', '你好我是賴柏堯<br />\r\n今年25歲<br />\r\n目前正在職訓當中<br />\r\n3/18乙級術科考試<br />\r\n3/21從職訓畢業  吧', '002.jpg');
+(1, '                      45654\r\n7898\r\n754654\r\n654654\r\n\r\n              ', '                                                                        2012-2014年<br>\r\n在鶯歌高職-廣告設計系<br>\r\n學習到設計系的相關專業<br>\r\n2015-2018<br>\r\n在崑山科技大學-公共關係廣告系<br>\r\n學習到公關計畫的知識與實作<br>\r\n2021- 2022<br>\r\n在泰山職訓半年<br>\r\n學習到程式相關的基礎與應用                                                        \r\n                                                                                                    ', 'S__52674566.jpg'),
+(9, '', '', ''),
+(10, '', '', '');
 
 -- --------------------------------------------------------
 
@@ -72,15 +74,18 @@ CREATE TABLE `portfolio` (
   `id` int(10) UNSIGNED NOT NULL,
   `text` text NOT NULL,
   `img` text NOT NULL,
-  `sh` int(10) UNSIGNED NOT NULL
+  `fil` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- 傾印資料表的資料 `portfolio`
 --
 
-INSERT INTO `portfolio` (`id`, `text`, `img`, `sh`) VALUES
-(1, 'dasdada', 'a', 1);
+INSERT INTO `portfolio` (`id`, `text`, `img`, `fil`) VALUES
+(105, '設計旅遊電子報', '006.jpg', 34933961),
+(106, 'PHP萬年曆', '005.jpg', 545751),
+(109, 'PHP投票系統', 'newvote.png', 6427041),
+(110, 'API串聯', 'API.png', 14430731);
 
 --
 -- 已傾印資料表的索引
@@ -112,19 +117,19 @@ ALTER TABLE `portfolio`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `introduce`
 --
 ALTER TABLE `introduce`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `member`
 --
 ALTER TABLE `member`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `portfolio`
 --
 ALTER TABLE `portfolio`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

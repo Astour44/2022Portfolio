@@ -1,7 +1,7 @@
 <h1 id="Introducejump"><a href="#Home">Introduce</a></h1>
 <div class="top">
     <div class="notes">
-    <img src="./img/未命名-1.gif" style="position: absolute;border:1px solid white;border-radius: 10px;" width="1100px" height="400px">
+    <img src="./img/001.gif" style="position: absolute;border:1px solid white;border-radius: 10px;" width="1100px" height="400px">
         <div class="notesp">
            
             <p style="width:300px;height:230px;">

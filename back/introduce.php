@@ -24,7 +24,7 @@
                     <br>
                     <td>
                         <textarea type="text" name="text" style="width:350px;height:230px;">
-                        <?= $Int->find(1)['text']; ?>
+                        <?= $Int->find(1)['text'];?>
                     </textarea>
                         <input type="submit" value="修改確定">
                     </td>

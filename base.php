@@ -3,16 +3,16 @@ session_start();
 date_default_timezone_set('Asia/Taipei');
 
 class DB{
-    protected $dsn="mysql:host=localhost;charset=utf8;dbname=portfolio";
-    protected $root="root";
-    protected $pdo;
-    protected $table;
-    // protected $dsn="mysql:host=localhost;charset=utf8;dbname=s1100425";
+    // protected $dsn="mysql:host=localhost;charset=utf8;dbname=portfolio";
+    // protected $root="root";
     // protected $pdo;
+    // protected $table;
+    protected $dsn="mysql:host=localhost;charset=utf8;dbname=s1100425";
+    protected $pdo;
     function __construct($table){
         $this->table=$table;
-        $this->pdo=new PDO($this->dsn,$this->root);
-        // $this->pdo = new PDO($this->dsn, 's1100425', 's1100425');
+        // $this->pdo=new PDO($this->dsn,$this->root);
+        $this->pdo = new PDO($this->dsn, 's1100425', 's1100425');
     }
 
     function all(...$arg){

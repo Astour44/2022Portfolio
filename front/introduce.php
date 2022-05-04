@@ -3,7 +3,7 @@
             <div class="notes">
                 <div class="notesp">
                     <p style="width:300px;height:230px;">
-                        <?= $Int->find(1)['resume']; ?>
+                       
                     </p>
                     <p style="width:350px;height:230px;">
 

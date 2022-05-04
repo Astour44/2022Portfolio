@@ -99,31 +99,32 @@ body {
     font-size: 24px;
     width: 95%;
     height: 400px;
-    border: 2px solid white;
-    background-image: url(../img/未命名-1.gif);
+    /*border: 2px solid white;*/
+    /*background-image: url(../img/未命名-1.gif);*/
     background-size: 100% 100%;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     display: flex;
     justify-content: space-around;
-    background-color: rgb(131, 131, 131);
+    /*background-color: rgb(131, 131, 131);*/
+    z-index: 2;
 }
 
 .notesp {
+    
     display: flex;
-    border: 5px solid white;
+    border: 5px solid rgb(38, 100, 124);
     width: 700px;
     height: 340px;
     margin-top: 25px;
 }
 
 .introduction {
-    border: 5px solid white;
+    border: 5px solid rgb(38, 100, 124);
     width: 250px;
     height: 300px;
     /*position: absolute; */
     margin-top: 30px;
     margin-left: -100px;
-
 
 }
 

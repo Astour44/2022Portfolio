@@ -56,9 +56,9 @@ body {
 .topic {
     width: 60%;
     height: 60%;
-    margin-top: 5px;
+    margin-top: auto;
     color: white;
-    font-size: 80px;
+    font-size: 40px;
 }
 
 .topbotton {

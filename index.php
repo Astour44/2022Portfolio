@@ -32,7 +32,7 @@ include_once "./base.php"
 
         <!--  自我介紹Introduce start -->
         <?php
-        include_once "./front/Introduce.php";
+        include_once "./front/introduce.php";
         ?>
         <!--  自我介紹Introduce end -->
 

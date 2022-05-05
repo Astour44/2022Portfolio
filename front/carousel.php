@@ -6,10 +6,10 @@
                     <img src="./img/beach.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/beach.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/S__52715529.jpg" class="d-block w-100" alt="..." width="100%" height="100%">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/beach.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/S__52715530.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">

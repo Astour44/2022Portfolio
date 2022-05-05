@@ -9,7 +9,7 @@ foreach ($rows as $row => $value) {
         <div class="bordergray"></div>
         <div class="top3">
             <div class="portfoliofront a">
-                <img src="./img/<?= $value['img']; ?>" alt="" width="100%" height="100%">
+                <a href="<?= $value['address']; ?>"><img src="./img/<?= $value['img']; ?>" alt="" width="100%" height="100%"></a>
 
             </div>
             <div class="portfoliofront">
@@ -32,7 +32,7 @@ foreach ($rows as $row => $value) {
                 </p>
             </div>
             <div class="portfoliofront b">
-                <img src="./img/<?= $value['img']; ?>" alt="" width="100%" height="100%">
+            <a href="<?= $value['address']; ?>"><img src="./img/<?= $value['img']; ?>" alt="" width="100%" height="100%"></a>
             </div>
         </div>
 <?php

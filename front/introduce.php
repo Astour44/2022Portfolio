@@ -13,7 +13,7 @@
                 <img src="./img/PS.png" style="border: 2px solid white;margin-left:5px;margin-top:5px;padding:5px" width="75" height="75">
                 <img src="./img/AI.png" style="border: 2px solid white;margin-left:5px;margin-top:5px;padding:5px" width="75" height="75">
                 <img src="./img/git.png" style="border: 2px solid white;margin-left:5px;margin-top:5px;padding:5px" width="75" height="75">
-                <img src="./img/PHP.png" style="border: 2px solid white;margin-left:5px;margin-top:5px;padding-left:4px;padding-right:4px;padding-top:7px;padding-bottom:7px" width="75" height="75">
+                <img src="./img/php.png" style="border: 2px solid white;margin-left:5px;margin-top:5px;padding-left:4px;padding-right:4px;padding-top:7px;padding-bottom:7px" width="75" height="75">
                 <img src="./img/MySQL.png" style="border: 2px solid white;margin-left:5px;margin-top:5px;padding-left:4px;padding-right:4px;padding-top:7px;padding-bottom:7px" width="75" height="75">
                 <img src="./img/laravel.png" style="border: 2px solid white;margin-left:5px;margin-top:5px;padding:5px" width="75" height="75">
                

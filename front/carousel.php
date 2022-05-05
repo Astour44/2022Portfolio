@@ -1,15 +1,15 @@
 <div class="d-flex justify-content-center">
     <div class="carousel1">
-        <div id="carouselExampleControls " class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls " class="carousel slide" data-ride="carousel" data-interval="2000">
             <div class="carousel-inner ">
                 <div class="carousel-item active">
-                    <img src="./img/beach.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/S__52715530.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="./img/S__52715529.jpg" class="d-block w-100" alt="..." width="100%" height="100%">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/S__52715530.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/beach.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">

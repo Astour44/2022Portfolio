@@ -12,7 +12,7 @@ foreach ($rows as $row => $value) {
                 <a href="<?= $value['address']; ?>"><img src="./img/<?= $value['img']; ?>" alt="" width="100%" height="100%"></a>
 
             </div>
-            <div class="portfoliofront">
+            <div class="portfoliofronttext">
                 <h1 class="d-flex justify-content-center"></h1>
                 <p class="portfoliop">
                     <?= $value['text']; ?>
@@ -25,7 +25,7 @@ foreach ($rows as $row => $value) {
     ?>
         <div class="bordergray"></div>
         <div class="top3">
-            <div class="portfoliofront">
+            <div class="portfoliofronttext">
                 <h1 class="d-flex justify-content-center"></h1>
                 <p class="portfoliop">
                     <?= $value['text']; ?>

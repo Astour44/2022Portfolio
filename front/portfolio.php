@@ -15,7 +15,7 @@ foreach ($rows as $row => $value) {
             <div class="portfoliofronttext">
                 <h1 class="d-flex justify-content-center"></h1>
                 <p class="portfoliop">
-                    <?= $value['text']; ?>
+                <?= $value['text']; ?>
                 </p>
             </div>
         </div>
